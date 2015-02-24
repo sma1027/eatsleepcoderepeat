@@ -1,0 +1,168 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ghost blog with github pages for free!!!</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=f7eb21353f">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://localhost:2368/ghost-blog-with-github-pages-for-free/">
+    
+    <meta property="og:site_name" content="eatsleepcoderepeat">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="ghost blog with github pages for free!!!">
+    <meta property="og:description" content="The setup: Download node version 0.10.33(stable)  because Ghost requires Node.js 0.10.x (latest stable) Download ghost  unzip the folder $cd ghost $npm install --production $npm start Go to 127.0.0.1:2368/ghost/ and...">
+    <meta property="og:url" content="http://localhost:2368/ghost-blog-with-github-pages-for-free/">
+    <meta property="article:published_time" content="2015-02-24T20:44:56.797Z">
+    <meta property="article:modified_time" content="2015-02-24T20:51:32.566Z">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="ghost blog with github pages for free!!!">
+    <meta name="twitter:description" content="The setup: Download node version 0.10.33(stable)  because Ghost requires Node.js 0.10.x (latest stable) Download ghost  unzip the folder $cd ghost $npm install --production $npm start Go to 127.0.0.1:2368/ghost/ and...">
+    <meta name="twitter:url" content="http://localhost:2368/ghost-blog-with-github-pages-for-free/">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "eatsleepcoderepeat",
+    "author": {
+        "@type": "Person",
+        "name": "sofiama",
+        "url": "http://localhost:2368/author/sofiama",
+        "sameAs": null
+    },
+    "headline": "ghost blog with github pages for free!!!",
+    "url": "http://localhost:2368/ghost-blog-with-github-pages-for-free/",
+    "datePublished": "2015-02-24T20:44:56.797Z",
+    "dateModified": "2015-02-24T20:51:32.566Z",
+    "description": "The setup: Download node version 0.10.33(stable)  because Ghost requires Node.js 0.10.x (latest stable) Download ghost  unzip the folder $cd ghost $npm install --production $npm start Go to 127.0.0.1:2368/ghost/ and..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.5">
+    <link rel="alternate" type="application/rss+xml" title="eatsleepcoderepeat" href="http://localhost:2368/rss/">
+</head>
+<body class="post-template">
+
+    
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="http://localhost:2368">Home</a>
+        <a class="subscribe-button icon-feed" href="http://localhost:2368/rss/">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">ghost blog with github pages for free!!!</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-02-24">24 February 2015</time> 
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>The setup:</p>
+
+<ol>
+<li>Download <a href="http://blog.nodejs.org/2014/10/23/node-v0-10-33-stable/">node version 0.10.33(stable)</a> <br>
+<ul><li>because Ghost requires Node.js 0.10.x (latest stable)</li></ul></li>
+<li>Download <a href="https://ghost.org/download/">ghost</a> <br>
+<ul><li>unzip the folder
+<code>
+$cd ghost
+$npm install --production
+$npm start
+</code></li>
+<li>Go to <a href="http://127.0.0.1:2368/ghost-blog-with-github-pages-for-free/127.0.0.1:2368/ghost/">127.0.0.1:2368/ghost/</a> and setup ghost</li></ul></li>
+<li>Install buster <br>
+<ul><li><code>$sudo easy_install pip</code></li>
+<li><code>$pip install buster</code></li></ul></li>
+<li>Setup Github Pages <br>
+<ul><li>Create a new repo on GitHub</li>
+<li><code>cd ghost</code></li>
+<li><code>$buster setup</code></li>
+<li>enter repo name <code>git@github.com:username/repo_name.git</code></li>
+<li>add a custom domain name <code>buster add-domain custom-domain-name.com</code> so that it can be viewed at <a href="http://username.github.io/custom-domain-name">http://username.github.io/custom-domain-name</a></li></ul></li>
+<li>Deploy! <br>
+<ul><li><code>buster generate --domain 127.0.0.1:2368</code></li>
+<li><code>buster preview</code> which can be viewed at localhost:9000</li>
+<li><code>buster deploy</code></li></ul></li>
+</ol>
+
+<hr>
+
+<p>Future posts - the workflow  </p>
+
+<ol>  
+<li><code>$cd ghost</code></li>  
+<li><code>$npm start</code></li>  
+<li>go to <a href="http://127.0.0.1:2368/ghost/">127.0.0.1:2368/ghost/</a></li>  
+<li>create your post</li>  
+<li><code>buster generate --domain 127.0.0.1:2368</code></li>  
+<li><code>buster preview</code></li>  
+<li><code>buster deploy</code></li>  
+<li>visit <a href="http://username.github.io/custom-domain-name">http://username.github.io/custom-domain-name</a> =)</li>  
+</ol>
+        </section>
+
+        <footer class="post-footer">
+
+
+
+            <section class="author">
+                <h4><a href="../author/sofiama/">sofiama</a></h4>
+
+                    <p>Read <a href="../author/sofiama/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=ghost%20blog%20with%20github%20pages%20for%20free!!!&amp;url=http://localhost:2368/ghost-blog-with-github-pages-for-free/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/ghost-blog-with-github-pages-for-free/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/ghost-blog-with-github-pages-for-free/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="http://localhost:2368">eatsleepcoderepeat</a> © 2015</section>
+        <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+    </footer>
+
+    <script src="../public/jquery.js?v=f7eb21353f"></script>
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=f7eb21353f"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=f7eb21353f"></script>
+
+</body>

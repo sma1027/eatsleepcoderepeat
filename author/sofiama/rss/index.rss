@@ -1,4 +1,45 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>sofiama - eatsleepcoderepeat</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.5</generator><lastBuildDate>Tue, 24 Feb 2015 19:48:18 GMT</lastBuildDate><atom:link href="http://localhost:2368/author/sofiama/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>woot! easier mapping!</title><description>&lt;p&gt;Say for example you have this &lt;br&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>sofiama - eatsleepcoderepeat</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.5</generator><lastBuildDate>Tue, 24 Feb 2015 20:52:01 GMT</lastBuildDate><atom:link href="http://localhost:2368/author/sofiama/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>ghost blog with github pages for free!!!</title><description>&lt;p&gt;The setup:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Download &lt;a href="http://blog.nodejs.org/2014/10/23/node-v0-10-33-stable/"&gt;node version 0.10.33(stable)&lt;/a&gt; &lt;br&gt;
+&lt;ul&gt;&lt;li&gt;because Ghost requires Node.js 0.10.x (latest stable)&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Download &lt;a href="https://ghost.org/download/"&gt;ghost&lt;/a&gt; &lt;br&gt;
+&lt;ul&gt;&lt;li&gt;unzip the folder
+&lt;code&gt;
+$cd ghost
+$npm install --production
+$npm start
+&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Go to &lt;a href="127.0.0.1:2368/ghost/"&gt;127.0.0.1:2368/ghost/&lt;/a&gt; and setup ghost&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Install buster &lt;br&gt;
+&lt;ul&gt;&lt;li&gt;&lt;code&gt;$sudo easy_install pip&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$pip install buster&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Setup Github Pages &lt;br&gt;
+&lt;ul&gt;&lt;li&gt;Create a new repo on GitHub&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd ghost&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$buster setup&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;enter repo name &lt;code&gt;git@github.com:username/repo_name.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;add a custom domain name &lt;code&gt;buster add-domain custom-domain-name.com&lt;/code&gt; so that it can be viewed at &lt;a href="http://username.github.io/custom-domain-name"&gt;http://username.github.io/custom-domain-name&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Deploy! &lt;br&gt;
+&lt;ul&gt;&lt;li&gt;&lt;code&gt;buster generate --domain 127.0.0.1:2368&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;buster preview&lt;/code&gt; which can be viewed at localhost:9000&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;buster deploy&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Future posts - the workflow  &lt;/p&gt;
+
+&lt;ol&gt;  
+&lt;li&gt;&lt;code&gt;$cd ghost&lt;/code&gt;&lt;/li&gt;  
+&lt;li&gt;&lt;code&gt;$npm start&lt;/code&gt;&lt;/li&gt;  
+&lt;li&gt;go to &lt;a href="http://127.0.0.1:2368/ghost/"&gt;127.0.0.1:2368/ghost/&lt;/a&gt;&lt;/li&gt;  
+&lt;li&gt;create your post&lt;/li&gt;  
+&lt;li&gt;&lt;code&gt;buster generate --domain 127.0.0.1:2368&lt;/code&gt;&lt;/li&gt;  
+&lt;li&gt;&lt;code&gt;buster preview&lt;/code&gt;&lt;/li&gt;  
+&lt;li&gt;&lt;code&gt;buster deploy&lt;/code&gt;&lt;/li&gt;  
+&lt;li&gt;visit &lt;a href="http://username.github.io/custom-domain-name"&gt;http://username.github.io/custom-domain-name&lt;/a&gt; =)&lt;/li&gt;  
+&lt;/ol&gt;</description><link>http://localhost:2368/ghost-blog-with-github-pages-for-free/</link><guid isPermaLink="false">19257998-34f1-4fef-9b27-18b54938b644</guid><dc:creator>sofiama</dc:creator><pubDate>Tue, 24 Feb 2015 20:44:56 GMT</pubDate></item><item><title>woot! easier mapping!</title><description>&lt;p&gt;Say for example you have this &lt;br&gt;
 - A table of users, with a name and a boolean value of true or false whether they are a student or not.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;class CreateUsers ActiveRecord::Migration
