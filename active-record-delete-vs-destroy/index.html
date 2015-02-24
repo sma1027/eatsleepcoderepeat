@@ -1,0 +1,177 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Active Record Delete vs Destroy</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=f7eb21353f">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://localhost:2368/active-record-delete-vs-destroy/">
+    
+    <meta property="og:site_name" content="eatsleepcoderepeat">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Active Record Delete vs Destroy">
+    <meta property="og:description" content="Models class Customer &amp;lt; ActiveRecord::Base   has_many :orders end class Order &amp;lt; ActiveRecord::Base   belongs_to :customer end Migrations class Order &amp;lt; ActiveRecord::Migration   def change     create_table customers do |t|       t.integer :customer_id        end    end end class...">
+    <meta property="og:url" content="http://localhost:2368/active-record-delete-vs-destroy/">
+    <meta property="article:published_time" content="2014-10-27T11:36:00.000Z">
+    <meta property="article:modified_time" content="2015-02-24T19:40:49.570Z">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Active Record Delete vs Destroy">
+    <meta name="twitter:description" content="Models class Customer &amp;lt; ActiveRecord::Base   has_many :orders end class Order &amp;lt; ActiveRecord::Base   belongs_to :customer end Migrations class Order &amp;lt; ActiveRecord::Migration   def change     create_table customers do |t|       t.integer :customer_id        end    end end class...">
+    <meta name="twitter:url" content="http://localhost:2368/active-record-delete-vs-destroy/">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "eatsleepcoderepeat",
+    "author": {
+        "@type": "Person",
+        "name": "sofiama",
+        "url": "http://localhost:2368/author/sofiama",
+        "sameAs": null
+    },
+    "headline": "Active Record Delete vs Destroy",
+    "url": "http://localhost:2368/active-record-delete-vs-destroy/",
+    "datePublished": "2014-10-27T11:36:00.000Z",
+    "dateModified": "2015-02-24T19:40:49.570Z",
+    "description": "Models class Customer &amp;lt; ActiveRecord::Base   has_many :orders end class Order &amp;lt; ActiveRecord::Base   belongs_to :customer end Migrations class Order &amp;lt; ActiveRecord::Migration   def change     create_table customers do |t|       t.integer :customer_id        end    end end class..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.5">
+    <link rel="alternate" type="application/rss+xml" title="eatsleepcoderepeat" href="http://localhost:2368/rss/">
+</head>
+<body class="post-template">
+
+    
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="http://localhost:2368">Home</a>
+        <a class="subscribe-button icon-feed" href="http://localhost:2368/rss/">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Active Record Delete vs Destroy</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2014-10-27">27 October 2014</time> 
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Models</p>
+
+<pre><code>class Customer &lt; ActiveRecord::Base
+  has_many :orders
+end
+
+class Order &lt; ActiveRecord::Base
+  belongs_to :customer
+end
+</code></pre>
+
+<hr>
+
+<p>Migrations</p>
+
+<pre><code>class Order &lt; ActiveRecord::Migration
+  def change
+    create_table customers do |t|
+      t.integer :customer_id
+       end
+   end
+end
+
+class Customer &lt; ActiveRecord::Migration
+  def change
+    create_table customers do |t|
+       end
+   end
+end
+</code></pre>
+
+<hr>
+
+<p>A customer create with an order</p>
+
+<pre><code>@customer = Customer.create    
+@customer.orders.create
+    #customer.id = 1, order.id = 1
+</code></pre>
+
+<hr>
+
+<p>When delete is run. The association still exists.</p>
+
+<pre><code>customer.delete # customer.id = 1, order.id = 1
+</code></pre>
+
+<p>When destroy is run, the association and rows are deleted.</p>
+
+<pre><code>customer.destroy #[]
+</code></pre>
+        </section>
+
+        <footer class="post-footer">
+
+
+
+            <section class="author">
+                <h4><a href="../author/sofiama/">sofiama</a></h4>
+
+                    <p>Read <a href="../author/sofiama/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=Active%20Record%20Delete%20vs%20Destroy&amp;url=http://localhost:2368/active-record-delete-vs-destroy/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/active-record-delete-vs-destroy/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/active-record-delete-vs-destroy/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="http://localhost:2368">eatsleepcoderepeat</a> © 2015</section>
+        <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+    </footer>
+
+    <script src="../public/jquery.js?v=f7eb21353f"></script>
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=f7eb21353f"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=f7eb21353f"></script>
+
+</body>
