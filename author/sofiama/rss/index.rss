@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>sofiama - eatsleepcoderepeat</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.5</generator><lastBuildDate>Tue, 24 Feb 2015 22:31:49 GMT</lastBuildDate><atom:link href="http://localhost:2368/author/sofiama/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>ghost blog with github pages for free!!!</title><description>&lt;p&gt;&lt;strong&gt;The setup:&lt;/strong&gt;&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>sofiama - eatsleepcoderepeat</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.5</generator><lastBuildDate>Tue, 24 Feb 2015 22:41:23 GMT</lastBuildDate><atom:link href="http://localhost:2368/author/sofiama/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>ghost blog with github pages for free!!!</title><description>&lt;p&gt;&lt;strong&gt;The setup:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Download &lt;a href="http://blog.nodejs.org/2014/10/23/node-v0-10-33-stable/"&gt;node version 0.10.33(stable)&lt;/a&gt; &lt;br&gt;
@@ -39,7 +39,7 @@ $npm start
 &lt;li&gt;&lt;code&gt;buster preview&lt;/code&gt;&lt;/li&gt;  
 &lt;li&gt;&lt;code&gt;buster deploy&lt;/code&gt;&lt;/li&gt;  
 &lt;li&gt;visit &lt;a href="http://username.github.io/custom-domain-name"&gt;http://username.github.io/custom-domain-name&lt;/a&gt; =)&lt;/li&gt;  
-&lt;/ol&gt;</description><link>http://localhost:2368/ghost-blog-with-github-pages-for-free/</link><guid isPermaLink="false">19257998-34f1-4fef-9b27-18b54938b644</guid><dc:creator>sofiama</dc:creator><pubDate>Tue, 24 Feb 2015 20:44:56 GMT</pubDate></item><item><title>woot! easier mapping!</title><description>&lt;p&gt;Say for example you have this &lt;br&gt;
+&lt;/ol&gt;</description><link>http://localhost:2368/ghost-blog-with-github-pages-for-free/</link><guid isPermaLink="false">19257998-34f1-4fef-9b27-18b54938b644</guid><category>ghost</category><category>free</category><category>blog</category><category>github-pages</category><category>buster</category><dc:creator>sofiama</dc:creator><pubDate>Tue, 24 Feb 2015 20:44:56 GMT</pubDate></item><item><title>woot! easier mapping!</title><description>&lt;p&gt;Say for example you have this &lt;br&gt;
 - A table of users, with a name and a boolean value of true or false whether they are a student or not.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;class CreateUsers ActiveRecord::Migration
