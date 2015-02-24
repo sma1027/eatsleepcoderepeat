@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>sofiama - eatsleepcoderepeat</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.5</generator><lastBuildDate>Tue, 24 Feb 2015 20:52:01 GMT</lastBuildDate><atom:link href="http://localhost:2368/author/sofiama/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>ghost blog with github pages for free!!!</title><description>&lt;p&gt;The setup:&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>sofiama - eatsleepcoderepeat</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.5</generator><lastBuildDate>Tue, 24 Feb 2015 22:31:49 GMT</lastBuildDate><atom:link href="http://localhost:2368/author/sofiama/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>ghost blog with github pages for free!!!</title><description>&lt;p&gt;&lt;strong&gt;The setup:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Download &lt;a href="http://blog.nodejs.org/2014/10/23/node-v0-10-33-stable/"&gt;node version 0.10.33(stable)&lt;/a&gt; &lt;br&gt;
@@ -28,7 +28,7 @@ $npm start
 
 &lt;hr&gt;
 
-&lt;p&gt;Future posts - the workflow  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Future posts - the workflow - how to?&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;  
 &lt;li&gt;&lt;code&gt;$cd ghost&lt;/code&gt;&lt;/li&gt;  
