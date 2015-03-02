@@ -1,4 +1,38 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>sofiama - eatsleepcoderepeat</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.5</generator><lastBuildDate>Tue, 24 Feb 2015 22:41:23 GMT</lastBuildDate><atom:link href="http://localhost:2368/author/sofiama/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>ghost blog with github pages for free!!!</title><description>&lt;p&gt;&lt;strong&gt;The setup:&lt;/strong&gt;&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>sofiama - eatsleepcoderepeat</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.5</generator><lastBuildDate>Mon, 02 Mar 2015 20:24:18 GMT</lastBuildDate><atom:link href="http://localhost:2368/author/sofiama/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>using devise to create users with admin credentials</title><description>&lt;p&gt;Using the devise gem to create users with admin credentials in Rails.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The setup&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;  
+    &lt;li&gt;Add devise:
+        &lt;ul&gt;
+            &lt;li&gt;Open your Gemfile and add &lt;strong&gt;gem 'devise'&lt;/strong&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+    &lt;/li&gt;&lt;li&gt;Open your terminal and run:&lt;/li&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;code&gt;bundle install&lt;/code&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;code&gt;rails g devise:install&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;li&gt;Create the user table&lt;/li&gt;
+        &lt;ul&gt;&lt;li&gt;&lt;code&gt;rails g devise user&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;li&gt;Add an admin column to the users table&lt;/li&gt;
+    &lt;ul&gt;&lt;li&gt;&lt;code&gt;rails generate migration add_admin_to_users admin:boolean&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;
+    &lt;li&gt;Execute migration
+        &lt;ul&gt;&lt;li&gt;&lt;code&gt;rake db:migrate&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;  
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;strong&gt;Helper methods&lt;/strong&gt; from devise&lt;/p&gt;
+
+&lt;ul&gt;  
+    &lt;li&gt;user_signed_in?&lt;/li&gt;
+    &lt;li&gt;current_user&lt;/li&gt;
+    &lt;li&gt;current_user.admin?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Check your schema for the current_user's attributes.&lt;/p&gt;</description><link>http://localhost:2368/using-devise-to-create-users-with-admin-credentials/</link><guid isPermaLink="false">441b2fab-454a-4524-ae55-ff9577f6a2ad</guid><dc:creator>sofiama</dc:creator><pubDate>Mon, 02 Mar 2015 20:22:10 GMT</pubDate></item><item><title>ghost blog with github pages for free!!!</title><description>&lt;p&gt;&lt;strong&gt;The setup:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Download &lt;a href="http://blog.nodejs.org/2014/10/23/node-v0-10-33-stable/"&gt;node version 0.10.33(stable)&lt;/a&gt; &lt;br&gt;

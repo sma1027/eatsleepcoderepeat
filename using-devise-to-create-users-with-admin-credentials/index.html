@@ -1,0 +1,161 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>using devise to create users with admin credentials</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=50497dab00">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://localhost:2368/using-devise-to-create-users-with-admin-credentials/">
+    
+    <meta property="og:site_name" content="eatsleepcoderepeat">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="using devise to create users with admin credentials">
+    <meta property="og:description" content="Using the devise gem to create users with admin credentials in Rails. The setup        Add devise:                      Open your Gemfile and add gem 'devise'               Open your terminal and run:              bundle install         rails g devise:install          Create the user table         rails g...">
+    <meta property="og:url" content="http://localhost:2368/using-devise-to-create-users-with-admin-credentials/">
+    <meta property="article:published_time" content="2015-03-02T20:22:10.384Z">
+    <meta property="article:modified_time" content="2015-03-02T20:22:10.383Z">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="using devise to create users with admin credentials">
+    <meta name="twitter:description" content="Using the devise gem to create users with admin credentials in Rails. The setup        Add devise:                      Open your Gemfile and add gem 'devise'               Open your terminal and run:              bundle install         rails g devise:install          Create the user table         rails g...">
+    <meta name="twitter:url" content="http://localhost:2368/using-devise-to-create-users-with-admin-credentials/">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "eatsleepcoderepeat",
+    "author": {
+        "@type": "Person",
+        "name": "sofiama",
+        "url": "http://localhost:2368/author/sofiama",
+        "sameAs": null
+    },
+    "headline": "using devise to create users with admin credentials",
+    "url": "http://localhost:2368/using-devise-to-create-users-with-admin-credentials/",
+    "datePublished": "2015-03-02T20:22:10.384Z",
+    "dateModified": "2015-03-02T20:22:10.383Z",
+    "description": "Using the devise gem to create users with admin credentials in Rails. The setup        Add devise:                      Open your Gemfile and add gem &#x27;devise&#x27;               Open your terminal and run:              bundle install         rails g devise:install          Create the user table         rails g..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.5">
+    <link rel="alternate" type="application/rss+xml" title="eatsleepcoderepeat" href="http://localhost:2368/rss/">
+</head>
+<body class="post-template">
+
+    
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="http://localhost:2368">Home</a>
+        <a class="subscribe-button icon-feed" href="http://localhost:2368/rss/">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">using devise to create users with admin credentials</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-03-02">02 March 2015</time> 
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Using the devise gem to create users with admin credentials in Rails.</p>
+
+<p><strong>The setup</strong></p>
+
+<ol>  
+    <li>Add devise:
+        <ul>
+            <li>Open your Gemfile and add <strong>gem 'devise'</strong></li>
+         </ul>
+    </li><li>Open your terminal and run:</li>
+    </ol><ul>
+        <li><code>bundle install</code></li>
+        <li><code>rails g devise:install</code></li>
+    </ul>
+    <li>Create the user table</li>
+        <ul><li><code>rails g devise user</code></li>
+        </ul>
+    <li>Add an admin column to the users table</li>
+    <ul><li><code>rails generate migration add_admin_to_users admin:boolean</code></li></ul>
+    <li>Execute migration
+        <ul><li><code>rake db:migrate</code></li></ul>
+    </li>
+  
+
+<hr>
+
+<p><strong>Helper methods</strong> from devise</p>
+
+<ul>  
+    <li>user_signed_in?</li>
+    <li>current_user</li>
+    <li>current_user.admin?</li>
+</ul>
+
+<p>Check your schema for the current_user's attributes.</p>
+        </section>
+
+        <footer class="post-footer">
+
+
+
+            <section class="author">
+                <h4><a href="../author/sofiama/">sofiama</a></h4>
+
+                    <p>Read <a href="../author/sofiama/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=using%20devise%20to%20create%20users%20with%20admin%20credentials&amp;url=http://localhost:2368/using-devise-to-create-users-with-admin-credentials/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/using-devise-to-create-users-with-admin-credentials/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/using-devise-to-create-users-with-admin-credentials/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="http://localhost:2368">eatsleepcoderepeat</a> © 2015</section>
+        <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+    </footer>
+
+    <script src="../public/jquery.js?v=50497dab00"></script>
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=50497dab00"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=50497dab00"></script>
+
+</body>
